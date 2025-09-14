@@ -8,64 +8,64 @@ import { Github, ExternalLink } from "lucide-react"
 
 const projects = [
   {
-    title: "E-commerce API",
+    title: "Redibuy API",
     description:
-      "A robust RESTful API built with Django REST Framework for an e-commerce platform with authentication, product management, and order processing.",
+      "A robust RESTful API built with FastAPI for an e-commerce platform with authentication, product management, and order processing.",
     image: "/placeholder.svg?height=300&width=500",
-    tags: ["Django", "PostgreSQL", "Docker", "Redis"],
-    github: "#",
+    tags: ["FastAPI", "PostgreSQL", "Docker", "Redis"],
+    github: "https://github.com/BjornOnGit/redi-buy_api",
     demo: "#",
     category: "Backend",
   },
   {
-    title: "Real-time Chat Application",
+    title: "Niarobi Liqour Store",
     description:
-      "A scalable chat application with real-time messaging using WebSockets, user authentication, and message history.",
-    image: "/placeholder.svg?height=300&width=500",
-    tags: ["Node.js", "Express", "Socket.io", "MongoDB"],
-    github: "#",
-    demo: "#",
+      "A scalable e-commerce liquor store with coupons, product inventory management, and analytics.",
+    image: "/projects/niarobi_img.png?height=300&width=500",
+    tags: ["Next.js", "Supabase", "Vercel"],
+    github: "https://github.com/BjornOnGit/niarobi-store",
+    demo: "https://niarobi-store.vercel.app/",
     category: "Full-Stack",
   },
   {
-    title: "Data Analytics Dashboard",
+    title: "ShieldForce - A Cybersecurity SaaS Platform",
     description:
-      "An interactive dashboard for visualizing and analyzing business metrics with customizable charts and reports.",
-    image: "/placeholder.svg?height=300&width=500",
-    tags: ["React", "D3.js", "FastAPI", "PostgreSQL"],
-    github: "#",
-    demo: "#",
+      "A comprehensive cybersecurity platform offering vulnerability management, threat detection, and compliance reporting for businesses.",
+    image: "/projects/shieldforce_img.png?height=300&width=500",
+    tags: ["React", "Next.js", "Chargebee", "HubSpot"],
+    github: "https://github.com/EPINECNG",
+    demo: "https://shieldforce.io/",
     category: "Full-Stack",
   },
   {
-    title: "Content Management System",
-    description: "A headless CMS with a RESTful API for managing digital content across multiple platforms.",
+    title: "Loan Decision Engine",
+    description: "A backend service that evaluates loan applications based on various criteria and returns approval or rejection decisions.",
     image: "/placeholder.svg?height=300&width=500",
-    tags: ["Django", "GraphQL", "AWS S3", "React"],
-    github: "#",
+    tags: ["TypeScript", "Node.js", "Prisma", "PostgreSQL"],
+    github: "https://github.com/BjornOnGit/mini-loan-decision-engine",
     demo: "#",
     category: "Backend",
   },
-  {
-    title: "Task Management App",
-    description:
-      "A Kanban-style task management application with drag-and-drop functionality, user roles, and notifications.",
-    image: "/placeholder.svg?height=300&width=500",
-    tags: ["Next.js", "Express.js", "MongoDB", "Socket.io"],
-    github: "#",
-    demo: "#",
-    category: "Full-Stack",
-  },
-  {
-    title: "API Gateway Service",
-    description:
-      "A microservice gateway that handles routing, authentication, rate limiting, and request transformation for a distributed system.",
-    image: "/placeholder.svg?height=300&width=500",
-    tags: ["FastAPI", "Redis", "Docker", "Kubernetes"],
-    github: "#",
-    demo: "#",
-    category: "Backend",
-  },
+  // {
+  //   title: "Task Management App",
+  //   description:
+  //     "A Kanban-style task management application with drag-and-drop functionality, user roles, and notifications.",
+  //   image: "/placeholder.svg?height=300&width=500",
+  //   tags: ["Next.js", "Express.js", "MongoDB", "Socket.io"],
+  //   github: "#",
+  //   demo: "#",
+  //   category: "Full-Stack",
+  // },
+  // {
+  //   title: "API Gateway Service",
+  //   description:
+  //     "A microservice gateway that handles routing, authentication, rate limiting, and request transformation for a distributed system.",
+  //   image: "/placeholder.svg?height=300&width=500",
+  //   tags: ["FastAPI", "Redis", "Docker", "Kubernetes"],
+  //   github: "#",
+  //   demo: "#",
+  //   category: "Backend",
+  // },
 ]
 
 const categories = ["All", "Backend", "Full-Stack", "Frontend"]

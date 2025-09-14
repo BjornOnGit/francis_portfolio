@@ -36,7 +36,7 @@ export default function About() {
             className="relative"
           >
             <div className="w-full h-[400px] relative rounded-lg overflow-hidden">
-              <Image src="/placeholder.svg?height=400&width=400" alt="Developer" fill className="object-cover" />
+              <Image src="/official_img.jpeg?height=400&width=400" alt="Developer" fill className="object-cover" />
             </div>
             <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-blue-500 rounded-full opacity-20 blur-2xl"></div>
             <div className="absolute -top-6 -left-6 w-40 h-40 bg-purple-500 rounded-full opacity-20 blur-2xl"></div>
