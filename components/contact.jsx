@@ -28,16 +28,26 @@ export default function Contact() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
 
-    setIsSubmitting(false)
-    setSubmitStatus("success")
-    setFormData({ name: "", email: "", message: "" })
-
-    // Reset status after 5 seconds
-    setTimeout(() => setSubmitStatus(null), 5000)
+      if (res.ok) {
+        setSubmitStatus("success")
+        setFormData({ name: "", email: "", message: "" })
+      } else {
+        setSubmitStatus("error")
+      }
+    } catch (err) {
+      setSubmitStatus("error")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
+
 
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-gray-900 to-black">
@@ -70,7 +80,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-gray-300 font-medium">Email</h4>
-                  <p className="text-gray-400">contact@example.com</p>
+                  <p className="text-gray-400">ezefrancis049@gmail.com</p>
                 </div>
               </div>
 
@@ -80,7 +90,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-gray-300 font-medium">Phone</h4>
-                  <p className="text-gray-400">+1 (555) 123-4567</p>
+                  <p className="text-gray-400">+2348163271545</p>
                 </div>
               </div>
 
@@ -90,13 +100,13 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-gray-300 font-medium">Location</h4>
-                  <p className="text-gray-400">San Francisco, CA</p>
+                  <p className="text-gray-400">Lagos, Nigeria</p>
                 </div>
               </div>
             </div>
 
             <div className="flex gap-4">
-              <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors">
+              <a href="https://github.com/BjornOnGit" className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     fillRule="evenodd"
@@ -105,7 +115,7 @@ export default function Contact() {
                   />
                 </svg>
               </a>
-              <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors">
+              {/* <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     fillRule="evenodd"
@@ -113,13 +123,13 @@ export default function Contact() {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
-              <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors">
+              </a> */}
+              <a href="https://x.com/theyclonedbjorn?s=11" className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                 </svg>
               </a>
-              <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors">
+              <a href="https://www.linkedin.com/in/francis-eze-ogonnaya" className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     fillRule="evenodd"
