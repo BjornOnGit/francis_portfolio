@@ -40,10 +40,10 @@ const projects = [
   {
     title: "Loan Decision Engine",
     description: "A backend service that evaluates loan applications based on various criteria and returns approval or rejection decisions.",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/mini-loan-decision-engine.png?height=300&width=500",
     tags: ["TypeScript", "Node.js", "Prisma", "PostgreSQL"],
     github: "https://github.com/BjornOnGit/mini-loan-decision-engine",
-    demo: "#",
+    demo: "https://mini-loan-decision-engine-1xwv.vercel.app/",
     category: "Backend",
   },
   // {
