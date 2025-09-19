@@ -8,16 +8,6 @@ import { Github, ExternalLink } from "lucide-react"
 
 const projects = [
   {
-    title: "Redibuy API",
-    description:
-      "A robust RESTful API built with FastAPI for an e-commerce platform with authentication, product management, and order processing.",
-    image: "/placeholder.svg?height=300&width=500",
-    tags: ["FastAPI", "PostgreSQL", "Docker", "Redis"],
-    github: "https://github.com/BjornOnGit/redi-buy_api",
-    demo: "#",
-    category: "Backend",
-  },
-  {
     title: "Niarobi Liqour Store",
     description:
       "A scalable e-commerce liquor store with coupons, product inventory management, and analytics.",
@@ -44,6 +34,16 @@ const projects = [
     tags: ["TypeScript", "Node.js", "Prisma", "PostgreSQL"],
     github: "https://github.com/BjornOnGit/mini-loan-decision-engine",
     demo: "https://mini-loan-decision-engine-1xwv.vercel.app/",
+    category: "Backend",
+  },
+  {
+    title: "Redibuy API",
+    description:
+      "A robust RESTful API built with FastAPI for an e-commerce platform with authentication, product management, and order processing.",
+    image: "/projects/redi-buy-api-img.png?height=300&width=500",
+    tags: ["FastAPI", "PostgreSQL", "Docker", "Redis"],
+    github: "https://github.com/BjornOnGit/redi-buy_api",
+    demo: "https://redibuy-api.francisezeogonnaya.tech/docs",
     category: "Backend",
   },
   // {
