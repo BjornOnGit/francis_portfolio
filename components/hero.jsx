@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="max-w-4xl mx-auto text-center z-10">
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
-            <span className="block mb-2">Hello, I'm Francis and I'm a</span>
+            <span className="block mb-2">Hello, I'm Francis</span>
             <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
               Full-Stack Developer
             </span>
